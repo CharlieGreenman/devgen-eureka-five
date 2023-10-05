@@ -41,6 +41,9 @@
       ],
       "@devgen-eureka-five/data-graphql": [
         "libs/data-graphql/src/index.ts"
+      ],
+      "@devgen-eureka-five/data-models": [
+        "libs/data-models/src/index.ts"
       ]
     }
   },

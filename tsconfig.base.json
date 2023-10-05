@@ -38,6 +38,9 @@
       ],
       "@devgen-eureka-five/data-services": [
         "libs/data-services/src/index.ts"
+      ],
+      "@devgen-eureka-five/data-graphql": [
+        "libs/data-graphql/src/index.ts"
       ]
     }
   },

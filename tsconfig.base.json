@@ -23,6 +23,9 @@
       ],
       "@devgen-eureka-five/common/ui": [
         "libs/common/ui/src/index.ts"
+      ],
+      "@devgen-eureka-five/home": [
+        "libs/home/src/index.ts"
       ]
     }
   },

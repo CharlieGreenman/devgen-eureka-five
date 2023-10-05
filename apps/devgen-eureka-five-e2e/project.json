@@ -1,0 +1,29 @@
+{
+  "name": "devgen-eureka-five-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/devgen-eureka-five-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/devgen-eureka-five-e2e/cypress.json",
+        "devServerTarget": "devgen-eureka-five:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "devgen-eureka-five:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/devgen-eureka-five-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["devgen-eureka-five"]
+}
